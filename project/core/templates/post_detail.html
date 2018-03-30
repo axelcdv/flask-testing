@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block title %}Post {{ post.id }}{% endblock %}
+
+{% block body %}
+<h1>
+    {{ post.title }}
+</h1>
+<p>
+    {{ post.body }}
+</p>
+<footer>
+    {{ post.author.first_name }} {{ post.author.last_name }}
+</footer>
+{% endblock %}
