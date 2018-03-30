@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block title %}Post list{% endblock %}
+
+{% block body %}
+<div>
+    <h2>List of posts</h2>
+    <ul>
+        {% for post in posts %}
+        <li>{{ post.title }} - <i>{{ post.author.first_name }}</i></li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}
